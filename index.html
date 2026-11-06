@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<meta name="description" content="Odai Al Moued, Solution Architect und zertifizierter Projektmanager (IAPM) aus Berlin.">
+<title>Odai Al Moued</title>
+<style>
+  /* Layoutidee: Der Projektablauf ist das Rückgrat der Seite. Eine durchgehende Linie
+     führt im dunklen Band von der Anforderung bis zum Bericht, der Rest bleibt ruhig. */
+  :root {
+    color-scheme: light;
+    --ink: #10242f;
+    --muted: #54666f;
+    --paper: #f3f6f5;
+    --line: #cfd9d8;
+    --band: #0e3a47;
+    --signal: #f2b43c;
+    --link: #0b6580;
+    --display: "Avenir Next", "Segoe UI Variable Display", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    --body: "Avenir Next", "Segoe UI Variable Text", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    --mono: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+  body { background: var(--paper); color: var(--ink); font-family: var(--body); font-size: 17px; line-height: 1.55; }
+  a { color: var(--link); text-underline-offset: 3px; }
+  a:focus-visible { outline: 3px solid var(--signal); outline-offset: 3px; border-radius: 2px; }
+  .wrap { width: min(1080px, 100% - 48px); margin-inline: auto; }
+  h1, h2, h3 { font-family: var(--display); text-wrap: balance; }
+  h2 { font-size: clamp(26px, 3.4vw, 36px); line-height: 1.15; font-weight: 700; letter-spacing: -.01em; }
+  .mono { font-family: var(--mono); font-size: 13px; font-variant-numeric: tabular-nums; letter-spacing: .01em; }
+
+  /* Kopf */
+  .hero { display: grid; grid-template-columns: 1fr 240px; gap: 56px; align-items: center; padding-block: 64px 56px; }
+  .who { font-weight: 600; color: var(--link); }
+  h1 { font-size: clamp(38px, 6.2vw, 68px); line-height: 1.04; font-weight: 700; letter-spacing: -.02em; margin-block: 14px 20px; }
+  .lead { max-width: 58ch; color: var(--muted); font-size: 19px; }
+  .actions { display: flex; flex-wrap: wrap; gap: 12px 24px; align-items: center; margin-top: 28px; }
+  .button { display: inline-block; background: var(--band); color: #fff; font-weight: 600; text-decoration: none; padding: 12px 22px; border-radius: 4px; transition: background .15s; }
+  .button:hover { background: var(--link); }
+  .portrait { width: 240px; aspect-ratio: 1; border-radius: 50%; overflow: hidden; }
+  .portrait img { display: block; width: 100%; height: 100%; object-fit: cover; transform: scale(1.04); }
+
+  /* Projektablauf */
+  .band { background: var(--band); color: #eaf3f3; padding-block: 56px 60px; }
+  .band h2 { color: #fff; }
+  .band p.intro { max-width: 60ch; margin-top: 10px; color: #bcd3d6; }
+  .rail { list-style: none; display: grid; grid-template-columns: repeat(5, 1fr); gap: 20px; margin-top: 40px; position: relative; }
+  .rail::before { content: ""; position: absolute; left: 0; right: 0; top: 8px; height: 2px; background: var(--signal); transform-origin: left; animation: draw 1.1s ease-out both; }
+  @keyframes draw { from { transform: scaleX(.12); } to { transform: scaleX(1); } }
+  .rail li { position: relative; padding-top: 32px; }
+  .rail li::before { content: ""; position: absolute; left: 0; top: 0; width: 18px; height: 18px; border-radius: 50%; background: var(--band); border: 3px solid var(--signal); }
+  .rail li:last-child::before { background: var(--signal); }
+  .rail h3 { font-size: 19px; color: #fff; margin-bottom: 4px; }
+  .rail p { font-size: 15px; line-height: 1.45; color: #bcd3d6; }
+
+  /* Inhalte */
+  section.block { padding-block: 60px 0; }
+  .split { display: grid; grid-template-columns: 240px 1fr; gap: 40px; }
+  .split > h2 { font-size: 26px; }
+  .rows { list-style: none; border-top: 2px solid var(--ink); }
+  .rows li { display: grid; grid-template-columns: 1fr 200px; gap: 8px 24px; padding-block: 16px; border-bottom: 1px solid var(--line); }
+  .rows h3 { font-size: 19px; line-height: 1.3; }
+  .rows p { grid-column: 1; color: var(--muted); max-width: 62ch; }
+  .rows .mono { grid-column: 2; grid-row: 1 / span 2; color: var(--muted); text-align: right; padding-top: 4px; }
+  .skills { display: grid; grid-template-columns: repeat(2, 1fr); gap: 22px 40px; border-top: 2px solid var(--ink); padding-top: 18px; }
+  .skills h3 { font-size: 16px; }
+  .skills p { color: var(--muted); }
+
+  /* Kontakt */
+  .contact { margin-top: 72px; border-top: 2px solid var(--ink); padding-block: 40px 56px; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 20px 40px; align-items: end; }
+  .contact a { font-family: var(--display); font-size: clamp(20px, 3vw, 30px); font-weight: 600; overflow-wrap: anywhere; }
+  .contact p { color: var(--muted); }
+
+  @media (max-width: 760px) {
+    body { font-size: 16px; }
+    .wrap { width: calc(100% - 40px); }
+    .hero { grid-template-columns: 1fr; gap: 28px; padding-block: 36px 40px; }
+    .portrait { width: 132px; order: -1; }
+    .rail { grid-template-columns: 1fr; gap: 22px; }
+    .rail::before { left: 8px; right: auto; top: 8px; bottom: 8px; width: 2px; height: auto; animation: none; }
+    .rail li { padding: 0 0 0 34px; }
+    .split { grid-template-columns: 1fr; gap: 16px; }
+    .rows li { grid-template-columns: 1fr; }
+    .rows .mono { grid-column: 1; grid-row: auto; text-align: left; padding-top: 0; }
+    .skills { grid-template-columns: 1fr; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    .rail::before { animation: none; }
+    .button { transition: none; }
+  }
+</style>
+</head>
+<body>
+<header class="wrap hero">
+  <div>
+    <p class="who">Odai Al Moued · Solution Architect &amp; Projektmanager · Berlin</p>
+    <h1>Ich bringe Fachbereich, Projektsteuerung und Technik zusammen.</h1>
+    <p class="lead">Ich plane Kundenprojekte, kläre die Anforderungen, baue die Lösung auf der Microsoft Power Platform und berichte an die Geschäftsführung. Mein Hintergrund als Fullstack-Entwickler sorgt dafür, dass Planung und Umsetzung zusammenpassen.</p>
+    <div class="actions">
+      <a class="button" href="mailto:odaimawed3@icloud.com">E-Mail schreiben</a>
+      <a href="#projekte">Projekte ansehen</a>
+    </div>
+  </div>
+  <div class="portrait"><img src="foto.jpg" alt="Porträt von Odai Al Moued" width="853" height="853"></div>
+</header>
+
+<div class="band">
+  <div class="wrap">
+    <h2>Ein Ansprechpartner von der Anforderung bis zum Bericht</h2>
+    <p class="intro">In meinen Kundenprojekten begleite ich jede Phase selbst. So geht zwischen Kunde, Team und Geschäftsführung nichts verloren.</p>
+    <ol class="rail">
+      <li><h3>Anforderung</h3><p>Kundenwünsche aufnehmen und mit den Fachbereichen klären</p></li>
+      <li><h3>Planung</h3><p>Projekt planen, organisieren und die Architektur konzipieren</p></li>
+      <li><h3>Umsetzung</h3><p>Lösung mit der Power Platform bauen und Prozesse automatisieren</p></li>
+      <li><h3>Test</h3><p>Ergebnis testen und mit dem Kunden abstimmen</p></li>
+      <li><h3>Bericht</h3><p>Stand und Ergebnisse an die Geschäftsführung berichten</p></li>
+    </ol>
+  </div>
+</div>
+
+<main class="wrap">
+  <section class="block split" id="projekte">
+    <h2>Projekte</h2>
+    <ul class="rows">
+      <li><h3>Portfolio-, Projekt- und Ressourcenmanagement</h3><p>Tool, das Portfolio, Projekte und Ressourcen an einem Ort zusammenführt.</p><span class="mono">Power Platform</span></li>
+      <li><h3>Bieterfragen</h3><p>Tool für die Bearbeitung von Bieterfragen.</p><span class="mono">Power Platform</span></li>
+      <li><h3>Meeting-Management</h3><p>Tool für die Organisation von Meetings.</p><span class="mono">Power Platform</span></li>
+      <li><h3>Offene Punkte (LOP)</h3><p>Tool für die Verfolgung der Liste offener Punkte.</p><span class="mono">Power Platform</span></li>
+    </ul>
+  </section>
+
+  <section class="block split">
+    <h2>Laufbahn</h2>
+    <ul class="rows">
+      <li><h3>Solution Architect &amp; Junior Project Manager, KOSTBAR</h3><p>Lösungsarchitektur, Projektplanung, Kundenkommunikation, Umsetzung und Test, Berichte an die Geschäftsführung.</p><span class="mono">06/2024 – heute</span></li>
+      <li><h3>Fullstack-Entwicklung &amp; Projektmanagement, form4 GmbH &amp; Co. KG</h3><p>TYPO3-Module mit PHP und MySQL, Webfrontends, Assistenz der Projektleitung mit Angeboten, Koordination und Controlling.</p><span class="mono">10/2021 – 06/2023</span></li>
+      <li><h3>B.Sc. Wirtschaftsinformatik, Technische Universität Berlin</h3><p>Informatik, Statistik und Betriebswirtschaft in einem Studium.</p><span class="mono">10/2020 – 08/2024</span></li>
+    </ul>
+  </section>
+
+  <section class="block split">
+    <h2>Zertifikate</h2>
+    <ul class="rows">
+      <li><h3>Certified Project Manager (IAPM)</h3><span class="mono">02/2025</span></li>
+      <li><h3>Certified Junior Project Manager (IAPM)</h3><span class="mono">11/2024</span></li>
+      <li><h3>DIN-Normungscoach, Basiswissen Normung</h3><span class="mono">04/2023</span></li>
+    </ul>
+  </section>
+
+  <section class="block split">
+    <h2>Kenntnisse</h2>
+    <div class="skills">
+      <div><h3>Business Applications</h3><p>Dynamics 365, Power Apps, Power Automate, Power BI, SAP</p></div>
+      <div><h3>Cloud</h3><p>Azure, AWS</p></div>
+      <div><h3>Web und CMS</h3><p>PHP, TYPO3, JavaScript, React, HTML/Twig, CSS/LESS</p></div>
+      <div><h3>Daten und Programmierung</h3><p>Oracle SQL, MySQL, Java, Python, Scala</p></div>
+    </div>
+  </section>
+
+  <footer class="contact">
+    <div>
+      <p>Lassen Sie uns sprechen</p>
+      <a href="mailto:odaimawed3@icloud.com">odaimawed3@icloud.com</a>
+    </div>
+    <p>Berlin · Diese Seite nutzt keine Cookies und kein Tracking.</p>
+  </footer>
+</main>
+</body>
+</html>
