@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow, noarchive">
+<meta name="referrer" content="no-referrer">
+<title>Bewerbungen</title>
+<style>
+  :root {
+    color-scheme: light;
+    --ink: #10242f;
+    --muted: #54666f;
+    --paper: #f3f6f5;
+    --card: #ffffff;
+    --line: #cfd9d8;
+    --band: #0e3a47;
+    --signal: #f2b43c;
+    --link: #0b6580;
+    --done: #2f7a55;
+    --body: "Avenir Next", "Segoe UI Variable Text", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    --mono: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { background: var(--paper); color: var(--ink); font-family: var(--body); font-size: 16px; line-height: 1.5; }
+  a { color: var(--link); text-underline-offset: 3px; }
+  .wrap { width: min(860px, 100% - 32px); margin-inline: auto; }
+  header { background: var(--band); color: #fff; padding-block: 32px 28px; }
+  header p { color: #bcd3d6; }
+  h1 { font-size: clamp(28px, 5vw, 40px); line-height: 1.1; letter-spacing: -.01em; margin-bottom: 6px; }
+  .stats { display: flex; gap: 28px; margin-top: 20px; font-variant-numeric: tabular-nums; }
+  .stats b { display: block; font-size: 28px; color: var(--signal); line-height: 1.1; }
+  .stats span { font-size: 14px; color: #bcd3d6; }
+  .tabs { display: flex; gap: 8px; margin-block: 24px 16px; flex-wrap: wrap; }
+  .tabs button { font: inherit; font-size: 15px; font-weight: 600; padding: 8px 16px; border-radius: 999px; border: 1px solid var(--line); background: var(--card); color: var(--ink); cursor: pointer; }
+  .tabs button[aria-pressed="true"] { background: var(--band); border-color: var(--band); color: #fff; }
+  ul { list-style: none; display: grid; gap: 12px; padding-bottom: 48px; }
+  li { background: var(--card); border: 1px solid var(--line); border-left: 4px solid var(--signal); border-radius: 6px; padding: 16px 18px; display: grid; grid-template-columns: auto 1fr; gap: 4px 14px; align-items: start; }
+  li.done { border-left-color: var(--done); }
+  li.done h2 { color: var(--muted); }
+  input[type="checkbox"] { width: 24px; height: 24px; margin-top: 2px; accent-color: var(--done); cursor: pointer; }
+  h2 { font-size: 18px; line-height: 1.3; }
+  .meta { grid-column: 2; color: var(--muted); font-size: 15px; }
+  .row { grid-column: 2; display: flex; flex-wrap: wrap; gap: 6px 16px; font-size: 14px; margin-top: 4px; }
+  .tag { font-family: var(--mono); font-size: 12.5px; padding: 2px 8px; border-radius: 4px; background: var(--paper); color: var(--muted); }
+  .tag.soon { background: #fdf0d3; color: #7a5300; }
+  .tag.over { background: #f9dcdc; color: #8a1f1f; }
+  .tag.ok { background: #dcefe4; color: var(--done); }
+  .empty { color: var(--muted); padding: 24px 0 48px; }
+  @media (prefers-reduced-motion: no-preference) { li { transition: border-color .15s; } }
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <h1>Bewerbungen</h1>
+    <p>Abhaken, sobald die Bewerbung raus ist. Häkchen speichert dieser Browser.</p>
+    <div class="stats">
+      <div><b id="n-offen">0</b><span>offen</span></div>
+      <div><b id="n-beworben">0</b><span>beworben</span></div>
+      <div><b id="n-alle">0</b><span>gesamt</span></div>
+    </div>
+  </div>
+</header>
+<main class="wrap">
+  <div class="tabs" role="group" aria-label="Filter">
+    <button type="button" data-f="offen" aria-pressed="true">Offen</button>
+    <button type="button" data-f="beworben" aria-pressed="false">Beworben</button>
+    <button type="button" data-f="alle" aria-pressed="false">Alle</button>
+  </div>
+  <ul id="liste"></ul>
+  <p class="empty" id="leer" hidden>Hier ist gerade nichts.</p>
+</main>
+<script>
+(() => {
+  const KEY = "bewerbungen-status";
+  let lokal = {};
+  try { lokal = JSON.parse(localStorage.getItem(KEY)) || {}; } catch (e) {}
+  const speichern = () => { try { localStorage.setItem(KEY, JSON.stringify(lokal)); } catch (e) {} };
+  let filter = "offen";
+  try { filter = localStorage.getItem("bewerbungen-filter") || "offen"; } catch (e) {}
+  let stellen = [];
+
+  const datum = s => s ? new Date(s + "T00:00:00").toLocaleDateString("de-DE", { day: "2-digit", month: "2-digit", year: "numeric" }) : "";
+  const istBeworben = s => s.id in lokal ? !!lokal[s.id].beworben : !!s.beworben;
+  const beworbenAm = s => (lokal[s.id] && lokal[s.id].am) || s.beworbenAm || "";
+  const tageBis = s => Math.round((new Date(s + "T00:00:00") - new Date(new Date().toDateString())) / 864e5);
+  const el = (tag, cls, text) => { const e = document.createElement(tag); if (cls) e.className = cls; if (text != null) e.textContent = text; return e; };
+
+  function render() {
+    document.querySelectorAll(".tabs button").forEach(b => b.setAttribute("aria-pressed", String(b.dataset.f === filter)));
+    const nBew = stellen.filter(istBeworben).length;
+    document.getElementById("n-beworben").textContent = nBew;
+    document.getElementById("n-offen").textContent = stellen.length - nBew;
+    document.getElementById("n-alle").textContent = stellen.length;
+
+    const liste = document.getElementById("liste");
+    liste.replaceChildren();
+    const sicht = stellen
+      .filter(s => filter === "alle" || (filter === "beworben") === istBeworben(s))
+      .sort((a, b) => (istBeworben(a) - istBeworben(b)) || (a.frist || "9999").localeCompare(b.frist || "9999") || (b.hinzugefuegt || "").localeCompare(a.hinzugefuegt || ""));
+
+    for (const s of sicht) {
+      const done = istBeworben(s);
+      const li = el("li", done ? "done" : "");
+      const cb = el("input");
+      cb.type = "checkbox"; cb.checked = done; cb.id = "cb-" + s.id;
+      cb.setAttribute("aria-label", "Beworben: " + s.titel);
+      cb.addEventListener("change", () => {
+        lokal[s.id] = { beworben: cb.checked, am: cb.checked ? new Date().toISOString().slice(0, 10) : "" };
+        speichern(); render();
+      });
+      const h = el("h2"); const lab = el("label", null, s.titel); lab.htmlFor = cb.id; h.append(lab);
+      const meta = el("p", "meta", [s.arbeitgeber, s.ort].filter(Boolean).join(" · "));
+      const row = el("div", "row");
+      if (done) row.append(el("span", "tag ok", "beworben" + (beworbenAm(s) ? " am " + datum(beworbenAm(s)) : "")));
+      if (s.frist && !done) {
+        const t = tageBis(s.frist);
+        row.append(el("span", "tag " + (t < 0 ? "over" : t <= 7 ? "soon" : ""), t < 0 ? "Frist abgelaufen" : "Frist " + datum(s.frist) + (t <= 7 ? " · noch " + t + " T." : "")));
+      }
+      if (s.hinzugefuegt) row.append(el("span", "tag", "seit " + datum(s.hinzugefuegt)));
+      if (s.link) { const a = el("a", null, "Ausschreibung"); a.href = s.link; a.target = "_blank"; a.rel = "noopener noreferrer"; row.append(a); }
+      if (s.notiz) row.append(el("span", null, s.notiz));
+      li.append(cb, h, meta, row);
+      liste.append(li);
+    }
+    document.getElementById("leer").hidden = sicht.length > 0;
+  }
+
+  document.querySelectorAll(".tabs button").forEach(b => b.addEventListener("click", () => {
+    filter = b.dataset.f; try { localStorage.setItem("bewerbungen-filter", filter); } catch (e) {} render();
+  }));
+
+  fetch("stellen.json", { cache: "no-store" })
+    .then(r => r.json())
+    .then(d => { stellen = d; render(); })
+    .catch(() => { document.getElementById("leer").hidden = false; document.getElementById("leer").textContent = "Die Stellenliste konnte nicht geladen werden."; });
+})();
+</script>
+</body>
+</html>
