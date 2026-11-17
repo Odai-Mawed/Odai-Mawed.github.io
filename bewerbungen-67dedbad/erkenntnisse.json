@@ -26,7 +26,7 @@
     "von": "Recruiting",
     "phase": "Vorauswahl, Rückfrage zu Skills",
     "frage": "Du gibst Skills in Docker und Kubernetes an. Wo wendest du sie an oder hast sie praktisch anwenden können?",
-    "antwort": "Docker und Kubernetes habe ich vor allem im Studium praktisch eingesetzt, im Programmierpraktikum „Skalierbare Systeme“ und im Seminar „Open Distributed Systems“: Anwendungen containerisiert, auf AWS bereitgestellt und skaliert. In meiner aktuellen Rolle arbeite ich überwiegend mit Dynamics 365, der Power Platform und Azure, Container-Technologien setze ich dort nicht im Tagesgeschäft ein. Ich würde mein Niveau daher als solide Grundlagen mit Praxis aus Projekten beschreiben und vertiefe das gern.",
-    "erkenntnis": "Jeder Skill im Profil wird hinterfragt. Nur angeben, was ich mit einem konkreten Beispiel belegen kann, und das Niveau ehrlich einordnen (Studium, Projekt oder Berufsalltag). Eine ehrliche Einordnung wirkt besser als eine aufgeblähte Skill-Liste."
+    "antwort": "Docker habe ich rund zwei Jahre lang bei der form4 GmbH & Co. KG im Arbeitsalltag eingesetzt: eigene Dockerfiles geschrieben, um unsere TYPO3- und PHP-Anwendungen zu containerisieren, und Kubernetes-Konfigurationen selbst erstellt und an die Anforderungen der Projekte angepasst. Ergänzend habe ich im Studium in „Skalierbare Systeme“ und „Open Distributed Systems“ mit AWS gearbeitet. In meiner aktuellen Rolle liegt der Schwerpunkt auf Dynamics 365, Power Platform und Azure; das Container-Wissen bringe ich gern wieder stärker ein.",
+    "erkenntnis": "Jeder Skill im Profil wird hinterfragt. Nur angeben, was ich mit einem konkreten Beispiel belegen kann, und das Niveau ehrlich einordnen (Studium, Projekt oder Berufsalltag). Eine ehrliche Einordnung wirkt besser als eine aufgeblähte Skill-Liste. Hier hatte ich ein starkes Praxisbeispiel, das in Lebenslauf und Website fehlte. Jetzt ergänzt."
   }
 ]
