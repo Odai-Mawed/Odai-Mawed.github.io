@@ -63,7 +63,8 @@
     "link": "https://job.deloitte.com/job-senior-solution-architect-microsoft-business-applications-mwd-_49097",
     "hinzugefuegt": "2026-11-17",
     "frist": "",
-    "beworben": false,
-    "notiz": "Job-ID 49097 · Online-Bewerbung · PL-600/MB-600 von Vorteil"
+    "beworben": true,
+    "notiz": "Job-ID 49097 · Online-Bewerbung · PL-600/MB-600 von Vorteil",
+    "beworbenAm": "2026-11-17"
   }
 ]
