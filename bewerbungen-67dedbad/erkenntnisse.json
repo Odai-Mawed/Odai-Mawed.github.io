@@ -18,5 +18,15 @@
     "frage": "Wärst du beim Gehalt grundsätzlich noch verhandlungsbereit, und was ist deine aktuelle Wechselmotivation?",
     "antwort": "Zum Gehalt: Ja, ich bin grundsätzlich verhandlungsbereit. Wichtig ist mir das Gesamtpaket, also neben dem Gehalt auch die Aufgaben, Weiterbildung und Entwicklungsmöglichkeiten. Gern spreche ich darüber offen im Gespräch.\n\nZur Wechselmotivation: Bei KOSTBAR habe ich in den letzten zweieinhalb Jahren viel gelernt und Kundenprojekte von der Anforderung bis zum Test verantwortet. Jetzt möchte ich den nächsten Schritt gehen: mich technisch weiter vertiefen, in einem größeren Team mit erfahrenen Kolleginnen und Kollegen arbeiten und Verantwortung für anspruchsvollere Projekte übernehmen.",
     "erkenntnis": "Gehaltsfrage: Verhandlungsbereitschaft signalisieren, das Gesamtpaket betonen und eine konkrete Zahl oder Spanne parat haben, aber nicht hier im Netz notieren. Wechselmotivation immer nach vorn formulieren (wohin will ich), nie über den aktuellen Arbeitgeber klagen."
+  },
+  {
+    "id": "alicia-docker-k8s",
+    "datum": "2026-11-17",
+    "arbeitgeber": "Recruiting (Alicia)",
+    "von": "Recruiting",
+    "phase": "Vorauswahl, Rückfrage zu Skills",
+    "frage": "Du gibst Skills in Docker und Kubernetes an. Wo wendest du sie an oder hast sie praktisch anwenden können?",
+    "antwort": "Docker und Kubernetes habe ich vor allem im Studium praktisch eingesetzt, im Programmierpraktikum „Skalierbare Systeme“ und im Seminar „Open Distributed Systems“: Anwendungen containerisiert, auf AWS bereitgestellt und skaliert. In meiner aktuellen Rolle arbeite ich überwiegend mit Dynamics 365, der Power Platform und Azure, Container-Technologien setze ich dort nicht im Tagesgeschäft ein. Ich würde mein Niveau daher als solide Grundlagen mit Praxis aus Projekten beschreiben und vertiefe das gern.",
+    "erkenntnis": "Jeder Skill im Profil wird hinterfragt. Nur angeben, was ich mit einem konkreten Beispiel belegen kann, und das Niveau ehrlich einordnen (Studium, Projekt oder Berufsalltag). Eine ehrliche Einordnung wirkt besser als eine aufgeblähte Skill-Liste."
   }
 ]
