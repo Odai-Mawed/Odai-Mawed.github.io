@@ -1,0 +1,22 @@
+[
+  {
+    "id": "objektkultur-motivation",
+    "datum": "2026-11-17",
+    "arbeitgeber": "Objektkultur",
+    "von": "Recruiting",
+    "phase": "Nach Eingang der Bewerbung (E-Mail)",
+    "frage": "Was hat dich an dieser Position besonders angesprochen? Und welche Erfahrungen bringst du im Bereich Softwareentwicklung mit?",
+    "antwort": "Ihr arbeitet genau mit den Technologien, mit denen ich jeden Tag arbeite: Dynamics 365, der Power Platform und Azure. Bei euch kann ich mich stärker auf die Entwicklung konzentrieren und mit einem erfahrenen Team Lösungen bauen. Besonders gefällt mir, dass Beratung und Technik bei euch eng zusammengehören.\n\nSoftwareentwicklung:\n• KOSTBAR (seit 06/2024): Anwendungen auf Dynamics 365 und Power Platform, JavaScript-Webressourcen, Komponenten in C#, Datenmodelle, Power Automate, Power BI\n• form4 (2021–2023): TYPO3-Module mit PHP und MySQL, Webfrontends mit HTML/Twig, CSS/LESS, JavaScript, Gulp, interne Git-Schulung\n• Studium (TU Berlin): Java, Softwaretechnik, Webtechnologien (1,7), Skalierbare Systeme mit AWS, Unity, Python, Scala, SQL, R, Bachelorarbeit (1,3)\n\nDazu der Link zur Website.",
+    "erkenntnis": "Recruiting fragt früh nach Motivation und konkreter Erfahrung. Gut ankommen: kurze Antwort, Bezug zu den Technologien des Arbeitgebers, Erfahrung nach Stationen gegliedert, Link zur Website."
+  },
+  {
+    "id": "alicia-gehalt-wechsel",
+    "datum": "2026-11-17",
+    "arbeitgeber": "Recruiting (Alicia)",
+    "von": "Recruiting",
+    "phase": "Vorauswahl, nach Frage zur Reisebereitschaft",
+    "frage": "Wärst du beim Gehalt grundsätzlich noch verhandlungsbereit, und was ist deine aktuelle Wechselmotivation?",
+    "antwort": "Zum Gehalt: Ja, ich bin grundsätzlich verhandlungsbereit. Wichtig ist mir das Gesamtpaket, also neben dem Gehalt auch die Aufgaben, Weiterbildung und Entwicklungsmöglichkeiten. Gern spreche ich darüber offen im Gespräch.\n\nZur Wechselmotivation: Bei KOSTBAR habe ich in den letzten zweieinhalb Jahren viel gelernt und Kundenprojekte von der Anforderung bis zum Test verantwortet. Jetzt möchte ich den nächsten Schritt gehen: mich technisch weiter vertiefen, in einem größeren Team mit erfahrenen Kolleginnen und Kollegen arbeiten und Verantwortung für anspruchsvollere Projekte übernehmen.",
+    "erkenntnis": "Gehaltsfrage: Verhandlungsbereitschaft signalisieren, das Gesamtpaket betonen und eine konkrete Zahl oder Spanne parat haben, aber nicht hier im Netz notieren. Wechselmotivation immer nach vorn formulieren (wohin will ich), nie über den aktuellen Arbeitgeber klagen."
+  }
+]

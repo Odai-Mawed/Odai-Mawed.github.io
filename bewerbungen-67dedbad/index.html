@@ -47,6 +47,20 @@
   .tag.over { background: #f9dcdc; color: #8a1f1f; }
   .tag.ok { background: #dcefe4; color: var(--done); }
   .empty { color: var(--muted); padding: 24px 0 48px; }
+  .insights { padding-bottom: 56px; }
+  h2.sec { font-size: clamp(22px, 4vw, 28px); line-height: 1.2; margin-top: 8px; }
+  .insights .sub { color: var(--muted); margin: 4px 0 16px; }
+  details { background: var(--card); border: 1px solid var(--line); border-left: 4px solid var(--link); border-radius: 6px; margin-bottom: 12px; }
+  summary { cursor: pointer; padding: 14px 18px; list-style: none; }
+  summary::-webkit-details-marker { display: none; }
+  summary .q { font-weight: 700; font-size: 17px; line-height: 1.35; display: block; }
+  summary .m { font-size: 14px; color: var(--muted); display: block; margin-top: 4px; }
+  details[open] summary { border-bottom: 1px solid var(--line); }
+  .qa { padding: 14px 18px 16px; }
+  .qa h3 { font-size: 13px; text-transform: uppercase; letter-spacing: .06em; color: var(--muted); margin: 10px 0 4px; }
+  .qa h3:first-child { margin-top: 0; }
+  .qa p { white-space: pre-line; }
+  .qa .learn { background: #fdf0d3; border-radius: 4px; padding: 10px 12px; }
   @media (prefers-reduced-motion: no-preference) { li { transition: border-color .15s; } }
 </style>
 </head>
@@ -70,6 +84,12 @@
   </div>
   <ul id="liste"></ul>
   <p class="empty" id="leer" hidden>Hier ist gerade nichts.</p>
+
+  <section class="insights" aria-labelledby="erk-h">
+    <h2 id="erk-h" class="sec">Erkenntnisse aus dem Bewerbungsprozess</h2>
+    <p class="sub">Fragen aus Gesprächen und E-Mails, meine Antworten und was ich daraus mitnehme.</p>
+    <div id="erkenntnisse"></div>
+  </section>
 </main>
 <script>
 (() => {
@@ -130,6 +150,21 @@
   document.querySelectorAll(".tabs button").forEach(b => b.addEventListener("click", () => {
     filter = b.dataset.f; try { localStorage.setItem("bewerbungen-filter", filter); } catch (e) {} render();
   }));
+
+  fetch("erkenntnisse.json", { cache: "no-store" })
+    .then(r => r.json())
+    .then(list => {
+      const box = document.getElementById("erkenntnisse");
+      list.sort((a, b) => (b.datum || "").localeCompare(a.datum || ""));
+      for (const e of list) {
+        const d = el("details"), s = el("summary");
+        s.append(el("span", "q", e.frage), el("span", "m", [e.arbeitgeber, e.phase, datum(e.datum)].filter(Boolean).join(" · ")));
+        const qa = el("div", "qa");
+        qa.append(el("h3", null, "Meine Antwort"), el("p", null, e.antwort), el("h3", null, "Erkenntnis"), el("p", "learn", e.erkenntnis));
+        d.append(s, qa); box.append(d);
+      }
+    })
+    .catch(() => {});
 
   fetch("stellen.json", { cache: "no-store" })
     .then(r => r.json())
