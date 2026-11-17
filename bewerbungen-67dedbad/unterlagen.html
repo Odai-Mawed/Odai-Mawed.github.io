@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow, noarchive">
+<meta name="referrer" content="no-referrer">
+<title>Unterlagen</title>
+<style>
+  :root {
+    color-scheme: light;
+    --ink: #10242f; --muted: #54666f; --paper: #f3f6f5; --card: #fff; --line: #cfd9d8;
+    --band: #0e3a47; --signal: #f2b43c; --link: #0b6580; --done: #2f7a55;
+    --body: "Avenir Next", "Segoe UI Variable Text", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    --mono: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { background: var(--paper); color: var(--ink); font-family: var(--body); font-size: 16px; line-height: 1.5; }
+  a { color: var(--link); text-underline-offset: 3px; }
+  .wrap { width: min(920px, 100% - 32px); margin-inline: auto; }
+  header { background: var(--band); color: #fff; padding-block: 28px 26px; }
+  header .back { color: #bcd3d6; font-size: 14px; }
+  h1 { font-size: clamp(28px, 5vw, 40px); line-height: 1.1; margin: 8px 0 6px; }
+  header p { color: #bcd3d6; max-width: 60ch; }
+  .lock { background: var(--card); border: 1px solid var(--line); border-radius: 8px; padding: 22px; margin: 28px 0; max-width: 460px; }
+  .lock label { font-weight: 700; display: block; margin-bottom: 8px; }
+  .lock .row { display: flex; gap: 8px; }
+  .lock input { flex: 1; min-width: 0; font: inherit; padding: 10px 12px; border: 1px solid var(--line); border-radius: 6px; }
+  .btn { font: inherit; font-size: 15px; font-weight: 600; padding: 9px 16px; border-radius: 6px; border: 1px solid var(--band); background: var(--band); color: #fff; cursor: pointer; white-space: nowrap; }
+  .btn.ghost { background: var(--card); color: var(--band); }
+  .btn.small { font-size: 13.5px; padding: 6px 11px; }
+  .btn:disabled { opacity: .55; cursor: wait; }
+  .err { color: #8a1f1f; margin-top: 10px; font-size: 14px; }
+  .hint { color: var(--muted); font-size: 14px; margin-top: 10px; }
+  .tabs { display: flex; gap: 8px; margin: 26px 0 18px; flex-wrap: wrap; }
+  .tabs button { font: inherit; font-size: 15px; font-weight: 600; padding: 8px 16px; border-radius: 999px; border: 1px solid var(--line); background: var(--card); color: var(--ink); cursor: pointer; }
+  .tabs button[aria-selected="true"] { background: var(--band); border-color: var(--band); color: #fff; }
+  .card { background: var(--card); border: 1px solid var(--line); border-radius: 8px; padding: 18px; margin-bottom: 14px; }
+  .card.sent { border-left: 4px solid var(--done); }
+  .card.prep { border-left: 4px solid var(--signal); }
+  .card h2 { font-size: 19px; line-height: 1.3; }
+  .card .sub { color: var(--muted); font-size: 14.5px; margin-top: 2px; }
+  .badge { display: inline-block; font-size: 12.5px; font-weight: 700; padding: 2px 9px; border-radius: 999px; background: #fdf0d3; color: #7a5300; margin-right: 6px; }
+  .badge.ok { background: #dcefe4; color: var(--done); }
+  .badge.v { background: #e3eef6; color: var(--link); font-family: var(--mono); }
+  .files { list-style: none; margin-top: 12px; border-top: 1px solid var(--line); }
+  .files li { display: flex; align-items: center; gap: 10px; padding: 8px 0; border-bottom: 1px solid var(--line); }
+  .files .n { font-family: var(--mono); font-size: 12px; color: var(--muted); width: 22px; }
+  .files .t { flex: 1; min-width: 0; }
+  .files .t small { display: block; color: var(--muted); font-size: 12.5px; }
+  .actions { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 14px; }
+  .note { font-size: 14px; color: var(--muted); margin-top: 8px; }
+  .chips { display: flex; gap: 6px; flex-wrap: wrap; margin-bottom: 14px; }
+  .chips button { font: inherit; font-size: 13.5px; padding: 5px 12px; border-radius: 999px; border: 1px solid var(--line); background: var(--card); cursor: pointer; }
+  .chips button[aria-pressed="true"] { background: var(--link); border-color: var(--link); color: #fff; }
+  .tl { position: relative; padding-left: 22px; }
+  .tl::before { content: ""; position: absolute; left: 6px; top: 6px; bottom: 6px; width: 2px; background: var(--line); }
+  .tl .card { position: relative; }
+  .tl .card::before { content: ""; position: absolute; left: -22px; top: 22px; width: 14px; height: 14px; border-radius: 50%; background: var(--paper); border: 3px solid var(--link); }
+  .tl .card.latest::before { background: var(--signal); border-color: var(--signal); }
+  .changes { margin: 10px 0 0 18px; font-size: 14.5px; }
+  .changes li { margin-bottom: 2px; }
+  .used { font-size: 13.5px; margin-top: 8px; }
+  .used span { background: var(--paper); border-radius: 4px; padding: 1px 7px; margin-right: 4px; }
+  h3.grp { font-size: 14px; text-transform: uppercase; letter-spacing: .06em; color: var(--muted); margin: 18px 0 8px; }
+  main { padding-bottom: 56px; }
+  @media (max-width: 560px) { .files li { flex-wrap: wrap; } .files .t { flex-basis: calc(100% - 32px); } .files .b { margin-left: 32px; } }
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <a class="back" href="./">← Bewerbungen</a>
+    <h1>Unterlagen</h1>
+    <p>Lebenslauf-Versionen und alle Unterlagen je Stelle. Die Dateien liegen nur verschlüsselt auf dem Server und werden erst in deinem Browser mit dem Passwort geöffnet.</p>
+  </div>
+</header>
+<main class="wrap">
+  <form class="lock" id="lock" autocomplete="off">
+    <label for="pw">Passwort</label>
+    <div class="row"><input id="pw" type="password" autocomplete="current-password" required><button class="btn" id="go">Öffnen</button></div>
+    <p class="err" id="err" hidden>Das Passwort stimmt nicht.</p>
+    <p class="hint">Das Entschlüsseln dauert einen Moment.</p>
+  </form>
+  <div id="app" hidden>
+    <div class="tabs" role="tablist">
+      <button role="tab" data-t="pakete" aria-selected="true">Pakete je Stelle</button>
+      <button role="tab" data-t="versionen" aria-selected="false">Lebenslauf-Versionen</button>
+      <button role="tab" data-t="bib" aria-selected="false">Alle Dokumente</button>
+      <button class="btn ghost small" id="logout" style="margin-left:auto">Sperren</button>
+    </div>
+    <section id="pakete"></section>
+    <section id="versionen" hidden></section>
+    <section id="bib" hidden></section>
+  </div>
+</main>
+<script>
+(() => {
+  const $ = id => document.getElementById(id);
+  const el = (t, c, x) => { const e = document.createElement(t); if (c) e.className = c; if (x != null) e.textContent = x; return e; };
+  const b64 = s => Uint8Array.from(atob(s), c => c.charCodeAt(0));
+  const datum = s => s ? new Date(s + "T00:00:00").toLocaleDateString("de-DE", { day: "2-digit", month: "2-digit", year: "numeric" }) : "";
+  const kb = n => n > 1048576 ? (n / 1048576).toFixed(1).replace(".", ",") + " MB" : Math.round(n / 1024) + " KB";
+  let key = null, man = null, stellen = {};
+  const cache = new Map();
+
+  async function decrypt(buf) {
+    const d = new Uint8Array(buf);
+    return crypto.subtle.decrypt({ name: "AES-GCM", iv: d.slice(0, 12) }, key, d.slice(12));
+  }
+  async function blobOf(id) {
+    if (cache.has(id)) return cache.get(id);
+    const f = man.files[id];
+    const r = await fetch("vault/" + f.blob, { cache: "no-store" });
+    const bl = new Blob([await decrypt(await r.arrayBuffer())], { type: "application/pdf" });
+    cache.set(id, bl); return bl;
+  }
+  function fname(id) { return "Odai_Al_Moued_" + man.files[id].title.replace(/[^\wäöüÄÖÜß]+/g, "_").replace(/_+$/, "") + ".pdf"; }
+  async function openFile(id, btn) {
+    const w = window.open("", "_blank");
+    btn && (btn.disabled = true);
+    try { const u = URL.createObjectURL(await blobOf(id)); if (w) w.location = u; else location.href = u; }
+    finally { btn && (btn.disabled = false); }
+  }
+  async function download(blob, name) {
+    const u = URL.createObjectURL(blob); const a = el("a"); a.href = u; a.download = name; document.body.append(a); a.click(); a.remove();
+    setTimeout(() => URL.revokeObjectURL(u), 30000);
+  }
+  let pdfLib = null;
+  function loadPdfLib() {
+    if (pdfLib) return pdfLib;
+    pdfLib = new Promise((res, rej) => { const s = el("script"); s.src = "https://cdnjs.cloudflare.com/ajax/libs/pdf-lib/1.17.1/pdf-lib.min.js"; s.onload = () => res(window.PDFLib); s.onerror = rej; document.head.append(s); });
+    return pdfLib;
+  }
+  async function mergeAndDownload(ids, name, btn) {
+    btn.disabled = true; const old = btn.textContent; btn.textContent = "Wird erstellt …";
+    try {
+      const { PDFDocument } = await loadPdfLib(); const outDoc = await PDFDocument.create();
+      for (const id of ids) {
+        const src = await PDFDocument.load(await (await blobOf(id)).arrayBuffer(), { ignoreEncryption: true });
+        (await outDoc.copyPages(src, src.getPageIndices())).forEach(p => outDoc.addPage(p));
+      }
+      download(new Blob([await outDoc.save()], { type: "application/pdf" }), name);
+    } catch (e) { alert("Das Paket konnte nicht erstellt werden."); }
+    finally { btn.disabled = false; btn.textContent = old; }
+  }
+  function fileRow(id, i) {
+    const f = man.files[id], li = el("li");
+    const t = el("div", "t", f.title); t.append(el("small", null, kb(f.size)));
+    const b = el("div", "b"); const o = el("button", "btn ghost small", "Ansehen"); o.onclick = () => openFile(id, o);
+    const d = el("button", "btn ghost small", "Laden"); d.style.marginLeft = "6px";
+    d.onclick = async () => { d.disabled = true; try { download(await blobOf(id), fname(id)); } finally { d.disabled = false; } };
+    b.append(o, d);
+    li.append(el("span", "n", i != null ? String(i + 1).padStart(2, "0") : "•"), t, b); return li;
+  }
+
+  function renderPakete() {
+    const box = $("pakete"); box.replaceChildren();
+    for (const p of man.pakete) {
+      const st = stellen[p.stelle];
+      const sent = st ? !!st.beworben : p.status === "gesendet";
+      const c = el("article", "card " + (sent ? "sent" : "prep"));
+      const top = el("div"); top.append(el("span", "badge" + (sent ? " ok" : ""), sent ? "gesendet" + (p.datum ? " " + datum(p.datum) : "") : p.status));
+      if (!sent && p.frist) top.append(el("span", "badge", "Frist " + datum(p.frist)));
+      c.append(top, el("h2", null, p.titel), el("p", "sub", p.arbeitgeber));
+      if (p.note) c.append(el("p", "note", p.note));
+      const ul = el("ol", "files"); p.files.forEach((id, i) => ul.append(fileRow(id, i))); c.append(ul);
+      const acts = el("div", "actions");
+      const m = el("button", "btn small", "Paket als ein PDF laden");
+      m.onclick = () => mergeAndDownload(p.files, "Bewerbung_Odai_Al_Moued_" + p.arbeitgeber.replace(/\W+/g, "_") + ".pdf", m);
+      acts.append(m);
+      if (p.sent) { const s = el("button", "btn ghost small", "Gesendetes Original"); s.onclick = () => openFile(p.sent, s); acts.append(s); }
+      c.append(acts); box.append(c);
+    }
+  }
+  let variant = "Alle";
+  function renderVersionen() {
+    const box = $("versionen"); box.replaceChildren();
+    const vs = [...man.versions].sort((a, b) => b.date.localeCompare(a.date) || b.v.localeCompare(a.v));
+    const variants = ["Alle", ...new Set(man.versions.map(v => v.variant))];
+    const chips = el("div", "chips");
+    for (const v of variants) { const b = el("button", null, v); b.setAttribute("aria-pressed", String(v === variant)); b.onclick = () => { variant = v; renderVersionen(); }; chips.append(b); }
+    box.append(chips);
+    const tl = el("div", "tl"); const seen = new Set();
+    for (const v of vs) {
+      if (variant !== "Alle" && v.variant !== variant) continue;
+      const latest = !seen.has(v.variant); seen.add(v.variant);
+      const c = el("article", "card" + (latest ? " latest" : ""));
+      const top = el("div"); top.append(el("span", "badge v", "v" + v.v), el("span", "badge" + (latest ? " ok" : ""), latest ? "aktuell" : datum(v.date)));
+      c.append(top, el("h2", null, v.variant), el("p", "sub", datum(v.date) + " · " + v.note));
+      const ul = el("ul", "changes"); v.changes.forEach(x => ul.append(el("li", null, x))); c.append(ul);
+      if (v.usedFor && v.usedFor.length) {
+        const u = el("p", "used", "Verwendet für: ");
+        v.usedFor.forEach(id => { const s = stellen[id]; u.append(el("span", null, s ? s.arbeitgeber.split(",")[0] : id)); });
+        c.append(u);
+      }
+      const ol = el("ol", "files"); ol.append(fileRow(v.file)); c.append(ol);
+      tl.append(c);
+    }
+    box.append(tl);
+  }
+  function renderBib() {
+    const box = $("bib"); box.replaceChildren();
+    const groups = [["cv", "Lebensläufe"], ["letter", "Anschreiben"], ["attachment", "Anlagen"], ["package", "Gesendete Pakete"]];
+    for (const [k, label] of groups) {
+      const ids = Object.keys(man.files).filter(id => man.files[id].kind === k);
+      if (!ids.length) continue;
+      box.append(el("h3", "grp", label));
+      const c = el("div", "card"); const ol = el("ol", "files"); ol.style.marginTop = "0"; ol.style.borderTop = "0";
+      ids.forEach(id => ol.append(fileRow(id))); c.append(ol); box.append(c);
+    }
+  }
+  document.querySelectorAll('[role="tab"]').forEach(b => b.onclick = () => {
+    document.querySelectorAll('[role="tab"]').forEach(x => x.setAttribute("aria-selected", String(x === b)));
+    ["pakete", "versionen", "bib"].forEach(t => $(t).hidden = t !== b.dataset.t);
+  });
+
+  async function unlock(rawKey) {
+    key = await crypto.subtle.importKey("raw", rawKey, "AES-GCM", false, ["decrypt"]);
+    const r = await fetch("vault/manifest.bin", { cache: "no-store" });
+    man = JSON.parse(new TextDecoder().decode(await decrypt(await r.arrayBuffer())));
+    try { (await (await fetch("stellen.json", { cache: "no-store" })).json()).forEach(s => stellen[s.id] = s); } catch (e) {}
+    try { const l = JSON.parse(localStorage.getItem("bewerbungen-status")) || {}; for (const id in l) if (stellen[id]) stellen[id].beworben = l[id].beworben; } catch (e) {}
+    renderPakete(); renderVersionen(); renderBib();
+    $("lock").hidden = true; $("app").hidden = false;
+  }
+  $("lock").addEventListener("submit", async ev => {
+    ev.preventDefault(); $("err").hidden = true; $("go").disabled = true;
+    try {
+      const meta = await (await fetch("vault/meta.json", { cache: "no-store" })).json();
+      const base = await crypto.subtle.importKey("raw", new TextEncoder().encode($("pw").value.trim()), "PBKDF2", false, ["deriveBits"]);
+      const bits = await crypto.subtle.deriveBits({ name: "PBKDF2", hash: "SHA-256", salt: b64(meta.salt), iterations: meta.iterations }, base, 256);
+      await unlock(bits);
+      try { sessionStorage.setItem("vault-k", btoa(String.fromCharCode(...new Uint8Array(bits)))); } catch (e) {}
+    } catch (e) { $("err").hidden = false; }
+    finally { $("go").disabled = false; }
+  });
+  $("logout").onclick = () => { try { sessionStorage.removeItem("vault-k"); } catch (e) {} location.reload(); };
+  try { const k = sessionStorage.getItem("vault-k"); if (k) unlock(b64(k)).catch(() => {}); } catch (e) {}
+})();
+</script>
+</body>
+</html>
