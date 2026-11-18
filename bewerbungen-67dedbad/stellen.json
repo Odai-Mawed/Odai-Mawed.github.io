@@ -66,5 +66,16 @@
     "beworben": true,
     "notiz": "Job-ID 49097 · Online-Bewerbung · PL-600/MB-600 von Vorteil",
     "beworbenAm": "2026-11-17"
+  },
+  {
+    "id": "bdr-787",
+    "titel": "Senior Technical Project Manager – IT Innovations (m/w/d)",
+    "arbeitgeber": "Bundesdruckerei GmbH",
+    "ort": "Berlin",
+    "link": "https://jobs.bundesdruckerei.de/job/Senior-Technical-Project-Manager-IT-Innovations-%28mwd%29/787-de_DE",
+    "hinzugefuegt": "2026-11-18",
+    "frist": "",
+    "beworben": false,
+    "notiz": "Job 787 · unbefristet · ITIL, ISO 27001, Container gefragt"
   }
 ]
