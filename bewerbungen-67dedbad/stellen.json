@@ -86,8 +86,9 @@
     "link": "https://www.bwi.de/karriere/stellenangebote/job/consultant-low-code-no-code-digitalisierung-m-w-d-71127",
     "hinzugefuegt": "2026-11-19",
     "frist": "",
-    "beworben": false,
-    "notiz": "Job 71127 · Pega bevorzugt, andere Low-Code ok · gleiches Paket wie 71492"
+    "beworben": true,
+    "notiz": "Job 71127 · Pega bevorzugt, andere Low-Code ok · gleiches Paket wie 71492",
+    "beworbenAm": "2026-11-19"
   },
   {
     "id": "bwi-71492",
@@ -97,7 +98,8 @@
     "link": "https://www.bwi.de/karriere/stellenangebote/job/projektleiter-service-integrationsprojekte-m-w-d-71492",
     "hinzugefuegt": "2026-11-19",
     "frist": "",
-    "beworben": false,
-    "notiz": "Job 71492 · 57.800–74.600 € · gleiches Paket wie 71127"
+    "beworben": true,
+    "notiz": "Job 71492 · 57.800–74.600 € · gleiches Paket wie 71127",
+    "beworbenAm": "2026-11-19"
   }
 ]
