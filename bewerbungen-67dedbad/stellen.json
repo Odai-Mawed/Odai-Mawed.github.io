@@ -110,8 +110,9 @@
     "link": "https://www.sparkasse.de/jobboerse/jobangebot/business-analyst-m-w-d-schwerpunkt-data-quality-sparkassen-personalberatung-gmb-h-238551.html",
     "hinzugefuegt": "2026-11-20",
     "frist": "2026-12-04",
-    "beworben": false,
-    "notiz": "60.000–85.000 € · Kontakt: Antonia Franke · gleiches Paket wie IT-Spezialist"
+    "beworben": true,
+    "notiz": "60.000–85.000 € · Kontakt: Antonia Franke · gleiches Paket wie IT-Spezialist",
+    "beworbenAm": "2026-11-20"
   },
   {
     "id": "spk-224471",
@@ -121,8 +122,9 @@
     "link": "https://www.sparkasse.de/jobboerse/jobangebot/it-spezialist-m-w-d-sparkassen-personalberatung-gmb-h-224471.html",
     "hinzugefuegt": "2026-11-20",
     "frist": "",
-    "beworben": false,
-    "notiz": "Mendix/Low-Code · Frist laut Anzeige 29.06.2026 abgelaufen, Anzeige aber noch online"
+    "beworben": true,
+    "notiz": "Mendix/Low-Code · Frist laut Anzeige 29.06.2026 abgelaufen, Anzeige aber noch online",
+    "beworbenAm": "2026-11-20"
   },
   {
     "id": "bsk-initiativ",
@@ -132,7 +134,8 @@
     "link": "https://www.sparkasse.de/jobboerse/jobangebot/initiativbewerbung-berliner-sparkasse-218545.html",
     "hinzugefuegt": "2026-11-20",
     "frist": "",
-    "beworben": false,
-    "notiz": "Nur über Online-Formular · Bereich angeben: IT/Digitalisierung"
+    "beworben": true,
+    "notiz": "Nur über Online-Formular · Bereich angeben: IT/Digitalisierung",
+    "beworbenAm": "2026-11-20"
   }
 ]
