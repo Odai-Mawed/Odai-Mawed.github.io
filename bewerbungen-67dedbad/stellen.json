@@ -149,5 +149,38 @@
     "beworben": true,
     "notiz": "Job 524335 · Early Professional · CBTC für BVG U5/U8 · Netzwerk-Admin gefordert · Führerschein B · Kontakt: Nicole Volmer",
     "beworbenAm": "2026-11-23"
+  },
+  {
+    "id": "snb-1558",
+    "titel": "Fullstack Software-Entwickler*in Web-Plattform",
+    "arbeitgeber": "Stromnetz Berlin GmbH",
+    "ort": "Berlin-Mitte",
+    "link": "https://karriere.stromnetz.berlin/job/view/1558/fullstack-software-entwickler-in-web-plattform?page_lang=de",
+    "hinzugefuegt": "2026-11-24",
+    "frist": "2026-12-02",
+    "beworben": false,
+    "notiz": "62.000–75.000 € · Java/Spring ideal · Thymeleaf plus · Kontakt: Janice Schneider · gleiches Paket für alle drei"
+  },
+  {
+    "id": "snb-1559",
+    "titel": "Java Fullstack Software-Entwickler*in",
+    "arbeitgeber": "Stromnetz Berlin GmbH",
+    "ort": "Berlin-Mitte",
+    "link": "https://karriere.stromnetz.berlin/job/view/1559/java-fullstack-software-entwickler-in?page_lang=de",
+    "hinzugefuegt": "2026-11-24",
+    "frist": "2026-12-02",
+    "beworben": false,
+    "notiz": "62.000–75.000 € · Java/Spring · Rufbereitschaft · Azure plus · Kontakt: Janice Schneider · gleiches Paket für alle drei"
+  },
+  {
+    "id": "snb-1555",
+    "titel": "Software-Entwickler*in Geo- und Netzinformationssystem",
+    "arbeitgeber": "Stromnetz Berlin GmbH",
+    "ort": "Berlin-Mitte",
+    "link": "https://karriere.stromnetz.berlin/job/view/1555/software-entwickler-in-geo-und-netzinformationssystem?page_lang=de",
+    "hinzugefuegt": "2026-11-24",
+    "frist": "2026-12-02",
+    "beworben": false,
+    "notiz": "62.000–75.000 € · FME, MapBender, Geodaten · Rufbereitschaft · Kontakt: Janice Schneider · gleiches Paket für alle drei"
   }
 ]
