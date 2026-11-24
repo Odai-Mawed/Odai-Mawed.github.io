@@ -28,5 +28,15 @@
     "frage": "Du gibst Skills in Docker und Kubernetes an. Wo wendest du sie an oder hast sie praktisch anwenden können?",
     "antwort": "Docker habe ich rund zwei Jahre lang bei der form4 GmbH & Co. KG im Arbeitsalltag eingesetzt: eigene Dockerfiles geschrieben, um unsere TYPO3- und PHP-Anwendungen zu containerisieren, und Kubernetes-Konfigurationen selbst erstellt und an die Anforderungen der Projekte angepasst. Ergänzend habe ich im Studium in „Skalierbare Systeme“ und „Open Distributed Systems“ mit AWS gearbeitet. In meiner aktuellen Rolle liegt der Schwerpunkt auf Dynamics 365, Power Platform und Azure; das Container-Wissen bringe ich gern wieder stärker ein.",
     "erkenntnis": "Jeder Skill im Profil wird hinterfragt. Nur angeben, was ich mit einem konkreten Beispiel belegen kann, und das Niveau ehrlich einordnen (Studium, Projekt oder Berufsalltag). Eine ehrliche Einordnung wirkt besser als eine aufgeblähte Skill-Liste. Hier hatte ich ein starkes Praxisbeispiel, das in Lebenslauf und Website fehlte. Jetzt ergänzt."
+  },
+  {
+    "id": "spk-dubletten",
+    "datum": "2026-11-24",
+    "arbeitgeber": "Sparkassen-Personalberatung (Anne Axthelm)",
+    "von": "Recruiting",
+    "phase": "Telefonisches Erstgespräch, IT-Spezialist Potsdam",
+    "frage": "Für welche weiteren Sparkassenstellen haben Sie sich beworben? (Es darf keine Doppelungen geben.)",
+    "antwort": "Business Analyst Data Quality (Berlin) über die Sparkassen-Personalberatung, Initiativbewerbung direkt bei der Berliner Sparkasse sowie die besprochene Stelle IT-Spezialist in Potsdam. Per E-Mail nachgereicht.",
+    "erkenntnis": "Innerhalb einer Gruppe (Sparkassen-Finanzgruppe, Personalberatung) wird abgeglichen, wo man schon im Prozess ist. Deshalb lohnt sich ein einheitliches Paket mit gleichem Lebenslauf und gleichen Zahlen. Bewerbungen und Kanäle immer sauber notieren, damit man solche Fragen sofort beantworten kann. Das Gespräch wurde aufgezeichnet und transkribiert: auf Konsistenz achten."
   }
 ]
