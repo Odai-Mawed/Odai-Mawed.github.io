@@ -158,8 +158,9 @@
     "link": "https://karriere.stromnetz.berlin/job/view/1558/fullstack-software-entwickler-in-web-plattform?page_lang=de",
     "hinzugefuegt": "2026-11-24",
     "frist": "2026-12-02",
-    "beworben": false,
-    "notiz": "62.000–75.000 € · Java/Spring ideal · Thymeleaf plus · Kontakt: Janice Schneider · gleiches Paket für alle drei"
+    "beworben": true,
+    "notiz": "62.000–75.000 € · Java/Spring ideal · Thymeleaf plus · Kontakt: Janice Schneider · gleiches Paket für alle drei",
+    "beworbenAm": "2026-11-24"
   },
   {
     "id": "snb-1559",
@@ -169,8 +170,9 @@
     "link": "https://karriere.stromnetz.berlin/job/view/1559/java-fullstack-software-entwickler-in?page_lang=de",
     "hinzugefuegt": "2026-11-24",
     "frist": "2026-12-02",
-    "beworben": false,
-    "notiz": "62.000–75.000 € · Java/Spring · Rufbereitschaft · Azure plus · Kontakt: Janice Schneider · gleiches Paket für alle drei"
+    "beworben": true,
+    "notiz": "62.000–75.000 € · Java/Spring · Rufbereitschaft · Azure plus · Kontakt: Janice Schneider · gleiches Paket für alle drei",
+    "beworbenAm": "2026-11-24"
   },
   {
     "id": "snb-1555",
@@ -180,7 +182,8 @@
     "link": "https://karriere.stromnetz.berlin/job/view/1555/software-entwickler-in-geo-und-netzinformationssystem?page_lang=de",
     "hinzugefuegt": "2026-11-24",
     "frist": "2026-12-02",
-    "beworben": false,
-    "notiz": "62.000–75.000 € · FME, MapBender, Geodaten · Rufbereitschaft · Kontakt: Janice Schneider · gleiches Paket für alle drei"
+    "beworben": true,
+    "notiz": "62.000–75.000 € · FME, MapBender, Geodaten · Rufbereitschaft · Kontakt: Janice Schneider · gleiches Paket für alle drei",
+    "beworbenAm": "2026-11-24"
   }
 ]
