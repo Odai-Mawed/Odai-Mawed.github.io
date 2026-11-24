@@ -38,5 +38,55 @@
     "frage": "Für welche weiteren Sparkassenstellen haben Sie sich beworben? (Es darf keine Doppelungen geben.)",
     "antwort": "Business Analyst Data Quality (Berlin) über die Sparkassen-Personalberatung, Initiativbewerbung direkt bei der Berliner Sparkasse sowie die besprochene Stelle IT-Spezialist in Potsdam. Per E-Mail nachgereicht.",
     "erkenntnis": "Innerhalb einer Gruppe (Sparkassen-Finanzgruppe, Personalberatung) wird abgeglichen, wo man schon im Prozess ist. Deshalb lohnt sich ein einheitliches Paket mit gleichem Lebenslauf und gleichen Zahlen. Bewerbungen und Kanäle immer sauber notieren, damit man solche Fragen sofort beantworten kann. Das Gespräch wurde aufgezeichnet und transkribiert: auf Konsistenz achten."
+  },
+  {
+    "datum": "2026-11-24",
+    "arbeitgeber": "Sparkassen-Personalberatung (Anne Axthelm)",
+    "von": "Recruiting",
+    "phase": "Telefonisches Erstgespräch, IT-Spezialist Potsdam",
+    "id": "spk-wechsel",
+    "frage": "Warum möchtest du wechseln?",
+    "antwort": "Bei KOSTBAR habe ich in gut zweieinhalb Jahren viel gelernt und Lösungen von der Anforderung bis zur Abnahme verantwortet. Als Dienstleister übergebe ich sie danach aber an den Kunden. Ich möchte Lösungen in einem Haus langfristig betreuen, weiterentwickeln und sehen, wie sie im Alltag wirken.",
+    "erkenntnis": "Immer nach vorn formulieren: was ich suche, nicht wovor ich weglaufe. Kein schlechtes Wort über den aktuellen Arbeitgeber."
+  },
+  {
+    "datum": "2026-11-24",
+    "arbeitgeber": "Sparkassen-Personalberatung (Anne Axthelm)",
+    "von": "Recruiting",
+    "phase": "Telefonisches Erstgespräch, IT-Spezialist Potsdam",
+    "id": "spk-werdegang",
+    "frage": "Erzähl über dich: Was hast du in den letzten 5–10 Jahren gemacht, wo liegt deine Expertise?",
+    "antwort": "Chronologisch in 90 Sekunden: Abitur 2020 (LK Mathe und Geografie), parallel Schülervertretung. 2020–2024 Wirtschaftsinformatik an der TU Berlin (ITIL, Datenanalyse, skalierbare Systeme, Bachelorarbeit 1,3). 2021–2023 form4: Fullstack-Entwicklung mit PHP und TYPO3, Docker und Kubernetes, dann Projektmanagement und Einführung der ISO/IEC 27001. Seit 2024 KOSTBAR: Power Platform und Dynamics 365 für den öffentlichen Sektor, agil, dazu unternehmensweite IT-Betreuung. Expertise: Prozesse mit Low-Code digitalisieren, vom Workshop bis zum Betrieb, mit Blick auf Daten und Sicherheit.",
+    "erkenntnis": "Den Werdegang als rote Linie erzählen: Technik → Projekte → Low-Code und Prozesse. Mit der Expertise enden, die zur Stelle passt."
+  },
+  {
+    "datum": "2026-11-24",
+    "arbeitgeber": "Sparkassen-Personalberatung (Anne Axthelm)",
+    "von": "Recruiting",
+    "phase": "Telefonisches Erstgespräch, IT-Spezialist Potsdam",
+    "id": "spk-mendix",
+    "frage": "Kennst du Mendix?",
+    "antwort": "Produktiv noch nicht. Low-Code mache ich seit über zwei Jahren mit der Power Platform, und die Konzepte sind dieselben: Domain Model entspricht Dataverse, Microflows entsprechen Power Automate, Pages den Power-Apps-Oberflächen. Ich habe mich bereits mit Mendix beschäftigt und arbeite mich schnell ein.",
+    "erkenntnis": "Ehrlich sagen, sofort die Brücke schlagen. Vor dem nächsten Gespräch den Mendix-Lernpfad (Rapid Developer) machen, dann ist es ein echtes Argument."
+  },
+  {
+    "datum": "2026-11-24",
+    "arbeitgeber": "Sparkassen-Personalberatung (Anne Axthelm)",
+    "von": "Recruiting",
+    "phase": "Telefonisches Erstgespräch, IT-Spezialist Potsdam",
+    "id": "spk-gehalt",
+    "frage": "Wie ist deine Gehaltsvorstellung, und wie viel verdienst du aktuell?",
+    "antwort": "Gehaltsvorstellung: 68.000–70.000 € brutto im Jahr, bei allen Sparkassen-Bewerbungen gleich. Aktuelles Gehalt: wahrheitsgemäß nennen, ggf. mit Hinweis auf Zusatzleistungen. Die Zahl muss zur Gehaltsvorstellung passen (Wechselaufschlag ca. 10–15 %).",
+    "erkenntnis": "Die Gehaltsvorstellung muss in allen Kanälen identisch sein. Beim aktuellen Gehalt nie übertreiben: Spätestens mit der Gehaltsabrechnung oder dem Vertrag fällt es auf. Notieren, was genau genannt wurde."
+  },
+  {
+    "datum": "2026-11-24",
+    "arbeitgeber": "Sparkassen-Personalberatung (Anne Axthelm)",
+    "von": "Recruiting",
+    "phase": "Telefonisches Erstgespräch, IT-Spezialist Potsdam",
+    "id": "spk-warum-sparkasse",
+    "frage": "Warum möchtest du insbesondere zur Sparkasse?",
+    "antwort": "Weil ich langfristig in einem stabilen, regional verwurzelten Haus arbeiten möchte, dessen Arbeit man im Alltag der Menschen spürt. Im regulierten Umfeld einer Sparkasse zählen Sicherheit, Datenschutz und saubere Prozesse, und das ist mir wichtig, siehe ISO/IEC 27001. Und die Aufgabe passt genau: Excel-Lösungen durch digitale Workflows mit Low-Code ersetzen.",
+    "erkenntnis": "Drei Gründe: Sinn bzw. Regionalität, Stabilität, fachlicher Fit. Konkrete Aufgaben aus der Anzeige aufgreifen."
   }
 ]
