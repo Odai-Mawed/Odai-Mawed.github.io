@@ -238,5 +238,15 @@
     "frage": "Was tun mit angefangenen, nicht abgeschickten Bewerbungen in Portalen?",
     "antwort": "Bewusst entscheiden: abschicken oder über „Löschen / Zurückziehen“ beenden. Bei der DRV-Teamleiterstelle zurückgezogen, weil Pflichtkriterien (3 Jahre Netzwerk, Führungserfahrung) fehlen.",
     "erkenntnis": "Offene Entwürfe sauber schließen. Beim Login die Profildaten (z. B. Anschrift) prüfen, damit sie mit den Bewerbungsunterlagen übereinstimmen."
+  },
+  {
+    "id": "bachelor-urkunde",
+    "datum": "2026-11-26",
+    "arbeitgeber": "BG BAU und BMBFSFJ",
+    "von": "Recruiting",
+    "phase": "Nachforderung von Unterlagen",
+    "frage": "Welche Nachweise verlangen öffentliche Arbeitgeber zum Studium?",
+    "antwort": "Nicht nur die Notenbescheinigung, sondern die vollständigen Studienzeugnisse inklusive Bachelor-Urkunde. BG BAU: Upload unter „Meine Dokumente“ (nicht „Stellenbewerbung“) bis 08.12.2026; BMBFSFJ: Urkunde per E-Mail nachreichen.",
+    "erkenntnis": "Bachelor-Urkunde und Abschlusszeugnis als Scan immer griffbereit halten und standardmäßig ins Paket legen. Falls nicht vorhanden, Zweitschrift beim Prüfungsamt der TU Berlin beantragen."
   }
 ]
