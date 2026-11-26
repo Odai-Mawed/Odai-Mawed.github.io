@@ -185,5 +185,38 @@
     "beworben": true,
     "notiz": "62.000–75.000 € · FME, MapBender, Geodaten · Rufbereitschaft · Kontakt: Janice Schneider · gleiches Paket für alle drei",
     "beworbenAm": "2026-11-24"
+  },
+  {
+    "id": "dkb-22269",
+    "titel": "Tech Analyst – Delivery Management (m/w/d)",
+    "arbeitgeber": "DKB AG",
+    "ort": "Berlin",
+    "link": "https://jobs.dkb.de/job/Tech-Analyst-Delivery-Management/22269-de_DE",
+    "hinzugefuegt": "2026-11-26",
+    "frist": "",
+    "beworben": false,
+    "notiz": "Anforderungsanalyse, APIs, agil, Jira · beste Passung · gleiches Paket für alle drei DKB-Stellen"
+  },
+  {
+    "id": "dkb-22197",
+    "titel": "Tech Analyst – Application Lifecycle Management (m/w/d)",
+    "arbeitgeber": "DKB AG",
+    "ort": "Berlin",
+    "link": "https://jobs.dkb.de/job/Tech-Analyst-Application-Lifecycle-Management/22197-de_DE",
+    "hinzugefuegt": "2026-11-26",
+    "frist": "",
+    "beworben": false,
+    "notiz": "Modernisierung Anwendungslandschaft, KPIs, Dashboards · gleiches Paket für alle drei DKB-Stellen"
+  },
+  {
+    "id": "dkb-22216",
+    "titel": "DevOps Engineer – Enterprise Applications (m/w/d)",
+    "arbeitgeber": "DKB Service GmbH",
+    "ort": "Berlin",
+    "link": "https://jobs.dkb.de/job/DevOps-Engineer-Enterprise-Applications/22216-de_DE",
+    "hinzugefuegt": "2026-11-26",
+    "frist": "",
+    "beworben": false,
+    "notiz": "Docker/K8s, Windows/Linux, ITIL · Terraform/Helm plus · hybrid 1–2 Tage Office · gleiches Paket für alle drei DKB-Stellen"
   }
 ]
