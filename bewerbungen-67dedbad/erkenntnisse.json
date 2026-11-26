@@ -88,5 +88,15 @@
     "frage": "Warum möchtest du insbesondere zur Sparkasse?",
     "antwort": "Weil ich langfristig in einem stabilen, regional verwurzelten Haus arbeiten möchte, dessen Arbeit man im Alltag der Menschen spürt. Im regulierten Umfeld einer Sparkasse zählen Sicherheit, Datenschutz und saubere Prozesse, und das ist mir wichtig, siehe ISO/IEC 27001. Und die Aufgabe passt genau: Excel-Lösungen durch digitale Workflows mit Low-Code ersetzen.",
     "erkenntnis": "Drei Gründe: Sinn bzw. Regionalität, Stabilität, fachlicher Fit. Konkrete Aufgaben aus der Anzeige aufgreifen."
+  },
+  {
+    "id": "sam-vorbereitung",
+    "datum": "2026-11-26",
+    "arbeitgeber": "S-AM über Sparkassen-Personalberatung (Nils, Anne)",
+    "von": "Recruiting",
+    "phase": "Vorbereitungs-Call vor dem Interview",
+    "frage": "Was erwartet mich im Interview bei der S-AM, und worauf kommt es an?",
+    "antwort": "Runde mit beiden Geschäftsführern und Personal, sehr fachlich, sie werden nach Projekten, Herausforderungen und Highlights fragen. Gewünscht: Low-Code statt komplexer Backends, frische Ideen (Dienstleisterplattform mit Self-Service), Kundenbrille (Sparkassen zahlen per Umlage), Lust auf Regulatorik, Geduld mit dem Tempo der Gruppe, Dashboards als Quick Wins, 2–3 Tage Büro in Potsdam.",
+    "erkenntnis": "Vorbereitungsgespräche der Personalberatung liefern Insiderwissen: Pläne, Schmerzpunkte, Gesprächsrunde. Daraus eine konkrete Idee für das Interview vorbereiten. Aussagen zu anderen Bewerbungen müssen überall gleich lauten: am besten 'Im Gespräch bin ich nur mit euch, beworben habe ich mich gezielt im Finanz- und öffentlichen Sektor'."
   }
 ]
