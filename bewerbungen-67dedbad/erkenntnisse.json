@@ -228,5 +228,15 @@
     "frage": "Ich bewerbe mich auf mehrere Stellen im selben Portal – kommen die stellenspezifischen Anschreiben an?",
     "antwort": "Bei der DKB nicht: Das Portal speichert Unterlagen zentral im Kandidatenprofil, der letzte Upload ersetzt die vorherigen. Lösung: ein gemeinsames Anschreiben, das alle Stellen nennt und die Gemeinsamkeit erklärt, plus ein gemeinsamer Lebenslauf.",
     "erkenntnis": "Vor mehreren Bewerbungen beim selben Arbeitgeber prüfen, ob das Portal Dokumente pro Stelle oder pro Profil speichert (z. B. SuccessFactors: pro Profil). Bei Profil-Speicherung ein zentrales Anschreiben nutzen."
+  },
+  {
+    "id": "portal-entwuerfe",
+    "datum": "2026-11-26",
+    "arbeitgeber": "DRV Bund (Bewerbungsportal)",
+    "von": "Automatische Erinnerung",
+    "phase": "Portal-Hygiene",
+    "frage": "Was tun mit angefangenen, nicht abgeschickten Bewerbungen in Portalen?",
+    "antwort": "Bewusst entscheiden: abschicken oder über „Löschen / Zurückziehen“ beenden. Bei der DRV-Teamleiterstelle zurückgezogen, weil Pflichtkriterien (3 Jahre Netzwerk, Führungserfahrung) fehlen.",
+    "erkenntnis": "Offene Entwürfe sauber schließen. Beim Login die Profildaten (z. B. Anschrift) prüfen, damit sie mit den Bewerbungsunterlagen übereinstimmen."
   }
 ]
