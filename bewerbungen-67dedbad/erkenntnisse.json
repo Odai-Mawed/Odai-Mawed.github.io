@@ -46,7 +46,7 @@
     "phase": "Telefonisches Erstgespräch, IT-Spezialist Potsdam",
     "id": "spk-wechsel",
     "frage": "Warum möchtest du wechseln?",
-    "antwort": "Bei KOSTBAR habe ich in gut zweieinhalb Jahren viel gelernt und Lösungen von der Anforderung bis zur Abnahme verantwortet. Als Dienstleister übergebe ich sie danach aber an den Kunden. Ich möchte Lösungen in einem Haus langfristig betreuen, weiterentwickeln und sehen, wie sie im Alltag wirken.",
+    "antwort": "Bei KOSTBAR habe ich in gut zweieinhalb Jahren viel gelernt und Lösungen von der Anforderung bis zur Abnahme verantwortet. Als Dienstleister übergebe ich sie danach aber an den Kunden. Ich möchte Lösungen in einem Haus langfristig betreuen, weiterentwickeln und sehen, wie sie im Alltag wirken. Zusätzlich: Durch die Arbeit mit der ILB habe ich den Finanzsektor schätzen gelernt, und mein Wirtschaftsinformatik-Studium ist genau die Schnittstelle aus IT, Prozessen und Betriebswirtschaft, die in einer Bank zählt.",
     "erkenntnis": "Immer nach vorn formulieren: was ich suche, nicht wovor ich weglaufe. Kein schlechtes Wort über den aktuellen Arbeitgeber."
   },
   {
@@ -188,5 +188,35 @@
     "frage": "Checkliste vor dem Interview",
     "antwort": "Einladung, Link und Kontaktdaten griffbereit · Unterlagen aktuell, Notizblock, Stift · eigene Fragen · Outfit passend (lieber etwas formeller) · Stärken/Schwächen, Erfolge, Motivation, Lücken vorbereitet · Selbstpräsentation 2–3 Min. geübt · Gehaltsvorstellung recherchiert · Abschluss vorbereitet · positives Mindset.",
     "erkenntnis": "Vor jedem Interview diese Liste durchgehen. Bei Video: Technik, Licht, Hintergrund vorher testen."
+  },
+  {
+    "datum": "2026-11-26",
+    "arbeitgeber": "Eigene Ergänzungen (Odai)",
+    "von": "Selbst",
+    "phase": "Interview-Vorbereitung S-AM",
+    "id": "ich-privat-digital",
+    "frage": "Wie zeige ich, dass Digitalisierung meine Leidenschaft ist?",
+    "antwort": "Ich digitalisiere auch privat meine eigenen Prozesse und habe dazu viele private Referenzen (z. B. Automatisierungen mit n8n). Platzieren: kurz am Ende der Selbstvorstellung als Hook und ausführlicher bei „Was treibt Sie an?“ oder „Was machen Sie privat?“ – mit 1–2 konkreten Beispielen.",
+    "erkenntnis": "Private Projekte wirken authentisch und zeigen Eigenantrieb. Kurz halten, konkret bleiben, nicht ins Schwärmen geraten; nur echte Beispiele."
+  },
+  {
+    "datum": "2026-11-26",
+    "arbeitgeber": "Eigene Ergänzungen (Odai)",
+    "von": "Selbst",
+    "phase": "Interview-Vorbereitung S-AM",
+    "id": "ich-bueromensch",
+    "frage": "Wie stehe ich zum Büro?",
+    "antwort": "Ich bin ein Büromensch, lebe von der Interaktion und dem Austausch im Team – und ein guter Kaffee zieht mich zusätzlich an. 2–3 Tage in Potsdam passen sehr gut.",
+    "erkenntnis": "Bei der S-AM ein echtes Plus, weil sie das Büro beleben wollen (Info von Nils). Bei der Frage nach Arbeitsmodell oder Standort aktiv ansprechen."
+  },
+  {
+    "datum": "2026-11-26",
+    "arbeitgeber": "Eigene Ergänzungen (Odai)",
+    "von": "Selbst",
+    "phase": "Interview-Vorbereitung S-AM",
+    "id": "ich-dora-wissen",
+    "frage": "Welches Regulatorik-Wissen zeige ich?",
+    "antwort": "DORA (seit 17.01.2025) mit fünf Säulen: IKT-Risikomanagement, Meldung schwerwiegender IKT-Vorfälle, Resilienztests, IKT-Drittparteienrisiko, Informationsaustausch. Für die S-AM zentral: Informationsregister aller IKT-Verträge, Pflichtinhalte in Verträgen, Konzentrationsrisiko, Exit-Strategien, EU-Aufsicht über kritische IKT-Dienstleister. Dazu MaRisk AT 9 (Auslagerung vs. sonstiger Fremdbezug, Risikoanalyse, wesentliche Auslagerungen, zentrales Auslagerungsmanagement), § 25b KWG, EBA-Leitlinien zu Auslagerungen; DORA löst die BAIT weitgehend ab.",
+    "erkenntnis": "Wissen in Nebensätzen einstreuen, nicht dozieren. Jedes Stichwort mit einer eigenen Idee oder einem Projekt verbinden."
   }
 ]
