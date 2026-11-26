@@ -98,5 +98,95 @@
     "frage": "Was erwartet mich im Interview bei der S-AM, und worauf kommt es an?",
     "antwort": "Runde mit beiden Geschäftsführern und Personal, sehr fachlich, sie werden nach Projekten, Herausforderungen und Highlights fragen. Gewünscht: Low-Code statt komplexer Backends, frische Ideen (Dienstleisterplattform mit Self-Service), Kundenbrille (Sparkassen zahlen per Umlage), Lust auf Regulatorik, Geduld mit dem Tempo der Gruppe, Dashboards als Quick Wins, 2–3 Tage Büro in Potsdam.",
     "erkenntnis": "Vorbereitungsgespräche der Personalberatung liefern Insiderwissen: Pläne, Schmerzpunkte, Gesprächsrunde. Daraus eine konkrete Idee für das Interview vorbereiten. Aussagen zu anderen Bewerbungen müssen überall gleich lauten: am besten 'Im Gespräch bin ich nur mit euch, beworben habe ich mich gezielt im Finanz- und öffentlichen Sektor'."
+  },
+  {
+    "datum": "2026-11-26",
+    "arbeitgeber": "Sparkassen-Personalberatung (Anne) – Leitfaden",
+    "von": "Recruiting",
+    "phase": "Interview-Leitfaden & Checkliste",
+    "id": "leitfaden-star",
+    "frage": "Wie strukturiere ich Antworten im Interview?",
+    "antwort": "STAR-Methode: Situation – Aufgabe – Handlung – Ergebnis. Jede Projektgeschichte so erzählen, ca. 1 Minute, mit konkretem Ergebnis (am besten Zahl oder sichtbarer Nutzen).",
+    "erkenntnis": "Laut Leitfaden der SPB die Standardstruktur. Antworten kurz, relevant, nicht ausschweifen; aktiv zuhören und Rückfragen stellen."
+  },
+  {
+    "datum": "2026-11-26",
+    "arbeitgeber": "Sparkassen-Personalberatung (Anne) – Leitfaden",
+    "von": "Recruiting",
+    "phase": "Interview-Leitfaden & Checkliste",
+    "id": "leitfaden-ueber-mich",
+    "frage": "„Erzählen Sie etwas über sich.“ (Selbstpräsentation 2–3 Minuten)",
+    "antwort": "Rote Linie: TU Berlin Wirtschaftsinformatik → form4 (Fullstack, Docker/K8s, PM, ISO 27001) → KOSTBAR (Power Platform für den öffentlichen Sektor, Tool-Familien für ILB und BEW, agil, IT-Betreuung) → Expertise: Prozesse mit Low-Code digitalisieren, vom Workshop bis zum Betrieb → Motivation für genau diese Stelle.",
+    "erkenntnis": "Kurz, relevant, mit Bezug zur Stelle enden. 2–3 Minuten laut üben."
+  },
+  {
+    "datum": "2026-11-26",
+    "arbeitgeber": "Sparkassen-Personalberatung (Anne) – Leitfaden",
+    "von": "Recruiting",
+    "phase": "Interview-Leitfaden & Checkliste",
+    "id": "leitfaden-5-jahre",
+    "frage": "„Wo sehen Sie sich in 5 Jahren?“",
+    "antwort": "Realistisch und mit Bezug zur Stelle: „Ich sehe mich als jemanden, der die Low-Code- und RegTech-Lösungen hier fachlich verantwortet, tief in der Regulatorik zuhause ist und vielleicht ein kleines Team oder die Plattform führt. Dafür will ich mich weiterbilden, z. B. PL-600 und ITIL-Zertifizierung.“",
+    "erkenntnis": "Ambition zeigen, aber im Unternehmen bleiben wollen. Keine Antwort, die nach baldigem Wechsel klingt."
+  },
+  {
+    "datum": "2026-11-26",
+    "arbeitgeber": "Sparkassen-Personalberatung (Anne) – Leitfaden",
+    "von": "Recruiting",
+    "phase": "Interview-Leitfaden & Checkliste",
+    "id": "leitfaden-staerken-schwaechen",
+    "frage": "„Was sind Ihre Stärken und Schwächen?“",
+    "antwort": "Stärken: Brücke zwischen Fachbereich und Technik, strukturiert, schnelle Einarbeitung (Zeugnis form4). Schwäche ehrlich mit Lernbereitschaft: z. B. sehr gründlich arbeiten wollen → gelernt, mit Sprints früh Zwischenstände zu zeigen.",
+    "erkenntnis": "Schwächen immer mit Lernschritt verbinden. Nur nennen, was wirklich stimmt."
+  },
+  {
+    "datum": "2026-11-26",
+    "arbeitgeber": "Sparkassen-Personalberatung (Anne) – Leitfaden",
+    "von": "Recruiting",
+    "phase": "Interview-Leitfaden & Checkliste",
+    "id": "leitfaden-luecken",
+    "frage": "„Wie erklären Sie Lücken im Lebenslauf?“",
+    "antwort": "07/2023 bis 05/2024: Fokus auf den Studienabschluss (Bachelorarbeit, Note 1,3), Abschluss 08/2024, direkt danach bzw. parallel Einstieg bei KOSTBAR (06/2024). 01/2022: ein Monat zwischen Praktikum und Werkstudententätigkeit bei form4.",
+    "erkenntnis": "Lücken kurz, sachlich und positiv erklären. Vorher prüfen, ob die Erklärung so stimmt."
+  },
+  {
+    "datum": "2026-11-26",
+    "arbeitgeber": "Sparkassen-Personalberatung (Anne) – Leitfaden",
+    "von": "Recruiting",
+    "phase": "Interview-Leitfaden & Checkliste",
+    "id": "leitfaden-stressfragen",
+    "frage": "Wie gehe ich mit Stressfragen oder Kritik um?",
+    "antwort": "Ruhig bleiben, kurz nachdenken dürfen („Gute Frage, lassen Sie mich kurz überlegen“), ehrlich antworten, bei Wissenslücken sagen, wie ich es mir erarbeiten würde. Bei Kritik an Lücken (z. B. Mendix, Bankerfahrung): anerkennen, Brücke zu vorhandener Erfahrung, Lernplan nennen.",
+    "erkenntnis": "Challenge-Fragen sind bei der S-AM angekündigt. Nicht verteidigen, sondern souverän einordnen."
+  },
+  {
+    "datum": "2026-11-26",
+    "arbeitgeber": "Sparkassen-Personalberatung (Anne) – Leitfaden",
+    "von": "Recruiting",
+    "phase": "Interview-Leitfaden & Checkliste",
+    "id": "leitfaden-fragen",
+    "frage": "Welche Fragen stelle ich am Ende?",
+    "antwort": "Die 5 besten laut Leitfaden: 1) Wie würden Sie die Unternehmenskultur beschreiben? 2) Welche Erwartungen haben Sie an die Person in den ersten 6 Monaten? 3) Was sind die größten Herausforderungen in dieser Position? 4) Welche Weiterbildungs- und Entwicklungsmöglichkeiten gibt es? 5) Wie wird Erfolg in dieser Rolle gemessen? Plus stellenbezogene Fragen (Plattform, Mendix, PPS, Bürotage).",
+    "erkenntnis": "Eigene Fragen zeigen Interesse. Mindestens 3 stellen, den Rest je nach Gesprächsverlauf."
+  },
+  {
+    "datum": "2026-11-26",
+    "arbeitgeber": "Sparkassen-Personalberatung (Anne) – Leitfaden",
+    "von": "Recruiting",
+    "phase": "Interview-Leitfaden & Checkliste",
+    "id": "leitfaden-nachher",
+    "frage": "Was mache ich nach dem Gespräch?",
+    "antwort": "Am Ende bedanken, Interesse bekunden, nach Feedback und nächsten Schritten fragen. Danach eine kurze Dankes-E-Mail an die Gesprächspartner (bzw. über die Personalberatung) senden und der SPB kurz Rückmeldung geben.",
+    "erkenntnis": "Die Dankes-Mail unterstreicht das Interesse. Gleich nach dem Gespräch Notizen machen: Fragen, Namen, nächste Schritte."
+  },
+  {
+    "datum": "2026-11-26",
+    "arbeitgeber": "Sparkassen-Personalberatung (Anne) – Leitfaden",
+    "von": "Recruiting",
+    "phase": "Interview-Leitfaden & Checkliste",
+    "id": "leitfaden-checkliste",
+    "frage": "Checkliste vor dem Interview",
+    "antwort": "Einladung, Link und Kontaktdaten griffbereit · Unterlagen aktuell, Notizblock, Stift · eigene Fragen · Outfit passend (lieber etwas formeller) · Stärken/Schwächen, Erfolge, Motivation, Lücken vorbereitet · Selbstpräsentation 2–3 Min. geübt · Gehaltsvorstellung recherchiert · Abschluss vorbereitet · positives Mindset.",
+    "erkenntnis": "Vor jedem Interview diese Liste durchgehen. Bei Video: Technik, Licht, Hintergrund vorher testen."
   }
 ]
