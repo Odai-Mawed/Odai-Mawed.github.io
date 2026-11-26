@@ -194,8 +194,9 @@
     "link": "https://jobs.dkb.de/job/Tech-Analyst-Delivery-Management/22269-de_DE",
     "hinzugefuegt": "2026-11-26",
     "frist": "",
-    "beworben": false,
-    "notiz": "Anforderungsanalyse, APIs, agil, Jira · beste Passung · gleiches Paket für alle drei DKB-Stellen"
+    "beworben": true,
+    "notiz": "Anforderungsanalyse, APIs, agil, Jira · beste Passung · gleiches Paket für alle drei DKB-Stellen",
+    "beworbenAm": "2026-11-26"
   },
   {
     "id": "dkb-22197",
@@ -205,8 +206,9 @@
     "link": "https://jobs.dkb.de/job/Tech-Analyst-Application-Lifecycle-Management/22197-de_DE",
     "hinzugefuegt": "2026-11-26",
     "frist": "",
-    "beworben": false,
-    "notiz": "Modernisierung Anwendungslandschaft, KPIs, Dashboards · gleiches Paket für alle drei DKB-Stellen"
+    "beworben": true,
+    "notiz": "Modernisierung Anwendungslandschaft, KPIs, Dashboards · gleiches Paket für alle drei DKB-Stellen",
+    "beworbenAm": "2026-11-26"
   },
   {
     "id": "dkb-22216",
@@ -216,7 +218,8 @@
     "link": "https://jobs.dkb.de/job/DevOps-Engineer-Enterprise-Applications/22216-de_DE",
     "hinzugefuegt": "2026-11-26",
     "frist": "",
-    "beworben": false,
-    "notiz": "Docker/K8s, Windows/Linux, ITIL · Terraform/Helm plus · hybrid 1–2 Tage Office · gleiches Paket für alle drei DKB-Stellen"
+    "beworben": true,
+    "notiz": "Docker/K8s, Windows/Linux, ITIL · Terraform/Helm plus · hybrid 1–2 Tage Office · gleiches Paket für alle drei DKB-Stellen",
+    "beworbenAm": "2026-11-26"
   }
 ]

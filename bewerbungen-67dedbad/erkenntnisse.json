@@ -218,5 +218,15 @@
     "frage": "Welches Regulatorik-Wissen zeige ich?",
     "antwort": "DORA (seit 17.01.2025) mit fünf Säulen: IKT-Risikomanagement, Meldung schwerwiegender IKT-Vorfälle, Resilienztests, IKT-Drittparteienrisiko, Informationsaustausch. Für die S-AM zentral: Informationsregister aller IKT-Verträge, Pflichtinhalte in Verträgen, Konzentrationsrisiko, Exit-Strategien, EU-Aufsicht über kritische IKT-Dienstleister. Dazu MaRisk AT 9 (Auslagerung vs. sonstiger Fremdbezug, Risikoanalyse, wesentliche Auslagerungen, zentrales Auslagerungsmanagement), § 25b KWG, EBA-Leitlinien zu Auslagerungen; DORA löst die BAIT weitgehend ab.",
     "erkenntnis": "Wissen in Nebensätzen einstreuen, nicht dozieren. Jedes Stichwort mit einer eigenen Idee oder einem Projekt verbinden."
+  },
+  {
+    "id": "portal-zentrale-unterlagen",
+    "datum": "2026-11-26",
+    "arbeitgeber": "DKB (Bewerbungsportal)",
+    "von": "Selbst",
+    "phase": "Online-Bewerbung, mehrere Stellen",
+    "frage": "Ich bewerbe mich auf mehrere Stellen im selben Portal – kommen die stellenspezifischen Anschreiben an?",
+    "antwort": "Bei der DKB nicht: Das Portal speichert Unterlagen zentral im Kandidatenprofil, der letzte Upload ersetzt die vorherigen. Lösung: ein gemeinsames Anschreiben, das alle Stellen nennt und die Gemeinsamkeit erklärt, plus ein gemeinsamer Lebenslauf.",
+    "erkenntnis": "Vor mehreren Bewerbungen beim selben Arbeitgeber prüfen, ob das Portal Dokumente pro Stelle oder pro Profil speichert (z. B. SuccessFactors: pro Profil). Bei Profil-Speicherung ein zentrales Anschreiben nutzen."
   }
 ]
