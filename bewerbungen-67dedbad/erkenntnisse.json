@@ -268,5 +268,35 @@
   "frage": "Welche Projekt-Story zeigt, dass ich ein Tool komplett allein verantworten kann?",
   "antwort": "Vermessungskoordination für die BEW: Beim Umbau des Kraftwerks und des Geländes wird ständig vermessen, mit vielen Beteiligten. Vorher liefen Absprachen, Pläne und Ergebnisse über Mails und Ordner, ohne klaren Stand, welche Version gilt. Ich habe das Tool von 0 bis 100 gebaut (Anforderung, Datenmodell, App, Betrieb): Kommunikation, Versionierung, Ablage und Übersicht an einem Ort.",
   "erkenntnis": "Beste Story für „Projekt, auf das Sie stolz sind“ und für Fragen zu Dokumenten und Versionierung. Brücke zu Dienstleister- und Auslagerungsthemen: externe Partner, versionierte Dokumente, ein gemeinsamer Stand. Steht jetzt auf der Website, in allen Lebensläufen und in der Projektübersicht."
+ },
+ {
+  "id": "insider-wissen",
+  "datum": "2026-11-27",
+  "arbeitgeber": "S-Auslagerungsmanagement GmbH",
+  "von": "Eigene Vorbereitung",
+  "phase": "Interview-Vorbereitung",
+  "frage": "Wie nutze ich Insiderwissen aus dem Vorgespräch der Personalberatung, ohne dass es auffällt?",
+  "antwort": "Insider-Begriffe nicht von selbst nennen. In Phase 2 mit Türöffner-Fragen die Gesprächspartner das Thema selbst ansprechen lassen („Wie läuft heute die Abstimmung zwischen Sparkassen und Dienstleistern?“). Eigene Idee als Schlussfolgerung aus der öffentlich bekannten Rolle einleiten („Als ich mich mit Ihrer Rolle beschäftigt habe, lag für mich ein Gedanke nahe …“), von „einem Portal“ bzw. „meiner Idee“ sprechen statt von „Ihrer geplanten Plattform“. Auf Nachfrage ehrlich: „Die Personalberatung hat mir Ihre Rolle gut erklärt, die Idee habe ich daraus abgeleitet.“",
+  "erkenntnis": "Insiderwissen ist Vorbereitung, kein Gesprächsstoff. Ihre eigenen Worte aufgreifen wirkt stärker als Vorwissen. Auch Dateinamen und Folientitel prüfen, wenn man den Bildschirm teilt. Nie lügen; im Zweifel offen sagen, woher der Hintergrund stammt."
+ },
+ {
+  "id": "rolle-techie",
+  "datum": "2026-11-27",
+  "arbeitgeber": "S-Auslagerungsmanagement GmbH",
+  "von": "Personalberatung (Vorbereitung)",
+  "phase": "Positionierung",
+  "frage": "Welche Rolle hätte ich im Team?",
+  "antwort": "Die Personalberatung meinte, mit meinem Wissen wäre ich der größte Techie im Team. Positionierung: „Ihr Team ist bankfachlich stark. Ich wäre gern der, zu dem man mit jeder technischen Frage kommen kann, und der Technik so übersetzt, dass der Fachbereich sie versteht.“ Belege: Docker/Kubernetes, C#/JavaScript, Power Platform, Copilot Studio/n8n, IT-Betreuung, ISO 27001.",
+  "erkenntnis": "In bankfachlich starken Teams ist technische Tiefe das Alleinstellungsmerkmal. Selbstbewusst als technischer Kopf positionieren, aber immer mit der Übersetzer-Rolle zum Fachbereich verbinden."
+ },
+ {
+  "id": "privat-projekte",
+  "datum": "2026-11-27",
+  "arbeitgeber": "Allgemein",
+  "von": "Eigene Ergänzung",
+  "phase": "Persönliches",
+  "frage": "Welche privaten Digitalisierungsprojekte kann ich erzählen?",
+  "antwort": "Eigene Website (GitHub Pages) mit einem System für meine Unterlagen: versionierte Lebensläufe, verschlüsselte Dokumente (AES-256), eine kleine Wissensdatenbank mit Erkenntnissen aus Gesprächen; gebaut mit einem KI-Agenten als Entwicklungspartner. Dazu Workflows mit n8n und KI, die Informationen sammeln und auswerten.",
+  "erkenntnis": "Passt perfekt zu Themen wie Versionierung, Sicherheit, Wissensmanagement und KI. Offen sagen, dass ein KI-Agent mitentwickelt hat, das ist eine Stärke. Nicht erwähnen, dass dahinter ein Tracker mit vielen Bewerbungen steckt."
  }
 ]
